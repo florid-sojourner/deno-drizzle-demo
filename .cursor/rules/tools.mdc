@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: "Apply this rule when setting up project structure, adding, modifying, and removing code"
+globs:
+    - "*.ts"
+    - "deno.json"
+---
+# Style, Framework, and Ecosystem
+
+## Goal
+
+Generate consistent project structure and code that's easy to navigate and understand for other members of the community
+
+## Guidlines
+
+* Always use syntax and conventions of Deno 2.2 from https://deno.com/
+* Prefer using a deno.json file for imports over per-module imports unless a situation dictates a module-level import.
+* Be familiar with the standard library at https://jsr.io/@std and prefer these where suitable above other libraries, older versions, and previous repositories.
+* Always prefer the JSR import source if a specific library is available there.
+* Read the current documentation and source code for these tools on their current website and prefer the syntax and conventions described there in the version being used rather than examples found elsewhere on the internet or over your own understanding
+
+## Supporting Libraries
+
+* Use the latest drizzle library at https://orm.drizzle.team/ as databse ORM and for migrations
+* Use the required latest compatible postgres driver described as a dependendcy for the drizzle library.
+* Use Oak at https://jsr.io/@oak/oak
+
+### Additional Unspecified Libraries
+* Always explain why you suggest a new import or dependency should be included in the project and then ask my permission before proceeding to add a dependency

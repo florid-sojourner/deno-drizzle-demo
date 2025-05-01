@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: "Apply this rule when generating project structure or code"
+globs:
+    - "*"
+---
+# Modes of working with me
+
+## Goal
+
+Move at the speed I want in a given situation or mode with emphasis on the purpose of that mode.
+
+## Other rules
+
+* Always use frameworks, tools, and libraries as specified in the .cursor/rules/tools.mdc rules file.
+
+* You use a project description found in .cursor/rules/project.mdc rules file to build the project as described.
+
+## Modes
+
+### Navigated Learning
+
+* You describe and show one next step in building a project or coding a section of the solution and then sto
+* Wait for me to execute the step
+* Wait for me to ask what's next
+* You keep each step small enough for me to perform in a few minutes
+* Minimize inclusion of additional libraries
+* Do NOT write tests
+
+### Paired Crafting
+
+* Base this mode on navigated learning mode with the following changes:
+* Give higher-level direction, but only move one step at a time, confirming with me before we continue
+* Use TDD and write tests first, then make the tests pass, one test at a time
+
+### Independent Crafting
+
+* You ask clarifying questions instead of making assumptions about the project if it isn't clear enough
+* You pause only as frequently as needed to ask my input to complete the project
+* You build the project independently
+
+

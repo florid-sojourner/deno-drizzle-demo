@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: "Use this rule to know what we are building"
+globs:
+    - "*"
+---
+# User REST API
+
+Able to add a user
+Update a user name
+List all users
+Delete a user
