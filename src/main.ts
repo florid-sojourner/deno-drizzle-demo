@@ -1,12 +1,14 @@
-import { db } from "../drizzle/db.ts";
-import { UserTable } from "../drizzle/schema.ts";
+import { Hono } from "@hono/hono";
+import { createUser, deleteUser, getUser, getUsers, updateUser } from "./controllers/users.ts";
 
+const app = new Hono();
 
-await db.insert(UserTable).values({
-    name: "John Doe",
-})
+// User routes
+app.get("/users", getUsers);
+app.get("/users/:id", getUser);
+app.post("/users", createUser);
+app.put("/users/:id", updateUser);
+app.delete("/users/:id", deleteUser);
 
-const user = await db.select().from(UserTable);
-
-console.log(user);
+Deno.serve({ port: 8000 }, app.fetch);
 

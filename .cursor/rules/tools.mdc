@@ -27,7 +27,7 @@ Generate consistent project structure and code that's easy to navigate and under
 
 * Use the latest drizzle library at https://orm.drizzle.team/ as databse ORM and for migrations
 * Use the required latest compatible postgres driver described as a dependendcy for the drizzle library.
-* Use Oak at https://jsr.io/@oak/oak
+* Use Hono at https://jsr.io/@hono/hono
 
 ### Additional Unspecified Libraries
 * Always explain why you suggest a new import or dependency should be included in the project and then ask my permission before proceeding to add a dependency
